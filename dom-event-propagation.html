@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+        }
+        .child1,
+        .child2,
+        .child3,
+        .child4,
+        .child5 {
+            width: 80%;
+            height: 80%;
+        }
+.main,.child2,.child4{
+    background-color:lightgray ;   
+}
+.child1,.child3,.child5{
+    background-color:dimgray ;
+    
+}
+.main,
+.child1,
+.child2,
+.child3,
+.child4,
+.child5{
+display :flex;
+justify-content: center;
+align-items: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child1">
+            <div class="child2">
+                <div class="child3">
+                    <div class="child4">
+                        <div class="child5">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var main=document.querySelector(".main")
+        var child1=document.querySelector(".child1")
+        var child2=document.querySelector(".child2")
+        var child3=document.querySelector(".child3")
+        var child4=document.querySelector(".child4")
+        var child5=document.querySelector(".child5")
+
+        /* main.addEventListener("click",()=>alert(`main Div event is called`))
+        child1.addEventListener("click",()=>alert(`child1 Div event is called`))
+        child2.addEventListener("click",()=>alert(`child2 Div event is called`))//child to parent
+        child3.addEventListener("click",()=>alert(`child3 Div event is called`))
+        child4.addEventListener("click",()=>alert(`child4 Div event is called`))
+        child5.addEventListener("click",()=>alert(`child5 Div event is called`))*/
+
+        main.addEventListener("click",()=>alert(`main Div event is called`),true)
+        child1.addEventListener("click",()=>alert(`child1 Div event is called`),true)
+        child2.addEventListener("click",()=>alert(`child2 Div event is called`),true)
+        child3.addEventListener("click",()=>alert(`child3 Div event is called`),true)
+        child4.addEventListener("click",()=>alert(`child4 Div event is called`),true)
+        child5.addEventListener("click",()=>alert(`child5 Div event is called`),true)
+    </script>
+
+</body>
+
+</html>
